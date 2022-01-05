@@ -20,3 +20,57 @@ After gathering the NodeIDs the app will also allow you to scrape the IP website
 An example of the end result can be found here: https://zeroloop.org/apis/train-stations/all.json
 
 This is a static website, and will only ever return this JSON file.
+
+
+## JSON Structure
+
+The JSON file will have the following structure:
+
+    [
+        {
+            "name": "Abrantes",
+            "district": "SANTARÉM",
+            "parish": "São Miguel do Rio Torto e Rossio ao Sul do Tejo",
+            "municipality": "ABRANTES",
+            "id": "569623FE-D78C-4FF1-814B-D5FCAB44236C",
+            "nodeId": "9452001",
+            "longitude": "-8.194491",
+            "latitude": "39.440621",
+            "line": "Linha da Beira Baixa",
+            "amenities": [
+                {
+                    "type": "airport",
+                    "title": "Lisboa",
+                    "value": "> 20 Km"
+                },
+                {
+                    "type": "pharmacy",
+                    "title": "Santos",
+                    "value": "< 1 Km"
+                },
+                {
+                    "type": "fireDepartment",
+                    "title": " Municipais de Abrantes",
+                    "value": "241 360 670"
+                },
+                {
+                    "type": "police",
+                    "title": "GNR de Abrantes",
+                    "value": "241 360 920"
+                },
+                {
+                    "type": "hospital",
+                    "title": " Dr. Manoel Constâncio",
+                    "value": "241 360 700"
+                },
+                {
+                    "type": "address",
+                    "title": "",
+                    "value": "Rua da Estação de Abrantes - Rossio ao Sul do Tejo - 2205-022 ABRANTES"
+                }
+            ]
+        },
+        ...
+    ]
+
+Every propery is a String, and all properties can be nil.
