@@ -11,6 +11,11 @@
 		592118E627843BB200C13232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592118E527843BB200C13232 /* ContentView.swift */; };
 		592118E827843BB300C13232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592118E727843BB300C13232 /* Assets.xcassets */; };
 		592118EB27843BB300C13232 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592118EA27843BB300C13232 /* Preview Assets.xcassets */; };
+		592118F42784408400C13232 /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = 592118F32784408400C13232 /* CoreXLSX */; };
+		592118F62784422A00C13232 /* ImportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592118F52784422A00C13232 /* ImportViewModel.swift */; };
+		592118F827846F6500C13232 /* StationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592118F727846F6500C13232 /* StationCellView.swift */; };
+		592118FB2784869100C13232 /* PortugalTrains in Frameworks */ = {isa = PBXBuildFile; productRef = 592118FA2784869100C13232 /* PortugalTrains */; };
+		592119152784FEAC00C13232 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 592119142784FEAC00C13232 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,8 @@
 		592118E727843BB300C13232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		592118EA27843BB300C13232 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		592118EC27843BB300C13232 /* PTStations.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PTStations.entitlements; sourceTree = "<group>"; };
+		592118F52784422A00C13232 /* ImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewModel.swift; sourceTree = "<group>"; };
+		592118F727846F6500C13232 /* StationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				592118F42784408400C13232 /* CoreXLSX in Frameworks */,
+				592118FB2784869100C13232 /* PortugalTrains in Frameworks */,
+				592119152784FEAC00C13232 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +67,8 @@
 				592118E727843BB300C13232 /* Assets.xcassets */,
 				592118EC27843BB300C13232 /* PTStations.entitlements */,
 				592118E927843BB300C13232 /* Preview Content */,
+				592118F52784422A00C13232 /* ImportViewModel.swift */,
+				592118F727846F6500C13232 /* StationCellView.swift */,
 			);
 			path = PTStations;
 			sourceTree = "<group>";
@@ -85,6 +97,11 @@
 			dependencies = (
 			);
 			name = PTStations;
+			packageProductDependencies = (
+				592118F32784408400C13232 /* CoreXLSX */,
+				592118FA2784869100C13232 /* PortugalTrains */,
+				592119142784FEAC00C13232 /* SwiftSoup */,
+			);
 			productName = PTStations;
 			productReference = 592118E027843BB200C13232 /* PTStations.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +130,11 @@
 				Base,
 			);
 			mainGroup = 592118D727843BB200C13232;
+			packageReferences = (
+				592118F22784408400C13232 /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+				592118F92784869100C13232 /* XCRemoteSwiftPackageReference "PortugalTrains" */,
+				592119132784FEAC00C13232 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 592118E127843BB200C13232 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				592118E627843BB200C13232 /* ContentView.swift in Sources */,
+				592118F827846F6500C13232 /* StationCellView.swift in Sources */,
+				592118F62784422A00C13232 /* ImportViewModel.swift in Sources */,
 				592118E427843BB200C13232 /* PTStationsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +362,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		592118F22784408400C13232 /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+		592118F92784869100C13232 /* XCRemoteSwiftPackageReference "PortugalTrains" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joaoc-pires/PortugalTrains";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		592119132784FEAC00C13232 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		592118F32784408400C13232 /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 592118F22784408400C13232 /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+		592118FA2784869100C13232 /* PortugalTrains */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 592118F92784869100C13232 /* XCRemoteSwiftPackageReference "PortugalTrains" */;
+			productName = PortugalTrains;
+		};
+		592119142784FEAC00C13232 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 592119132784FEAC00C13232 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 592118D827843BB200C13232 /* Project object */;
 }
