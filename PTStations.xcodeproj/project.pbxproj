@@ -16,6 +16,7 @@
 		592118F827846F6500C13232 /* StationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592118F727846F6500C13232 /* StationCellView.swift */; };
 		592118FB2784869100C13232 /* PortugalTrains in Frameworks */ = {isa = PBXBuildFile; productRef = 592118FA2784869100C13232 /* PortugalTrains */; };
 		592119152784FEAC00C13232 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 592119142784FEAC00C13232 /* SwiftSoup */; };
+		5921191727859B9900C13232 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5921191627859B9900C13232 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		592118EC27843BB300C13232 /* PTStations.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PTStations.entitlements; sourceTree = "<group>"; };
 		592118F52784422A00C13232 /* ImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewModel.swift; sourceTree = "<group>"; };
 		592118F727846F6500C13232 /* StationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCellView.swift; sourceTree = "<group>"; };
+		5921191627859B9900C13232 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		592118D727843BB200C13232 = {
 			isa = PBXGroup;
 			children = (
+				5921191627859B9900C13232 /* README.md */,
 				592118E227843BB200C13232 /* PTStations */,
 				592118E127843BB200C13232 /* Products */,
 			);
@@ -149,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5921191727859B9900C13232 /* README.md in Resources */,
 				592118EB27843BB300C13232 /* Preview Assets.xcassets in Resources */,
 				592118E827843BB300C13232 /* Assets.xcassets in Resources */,
 			);
